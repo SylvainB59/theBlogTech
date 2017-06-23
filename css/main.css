@@ -97,9 +97,81 @@ textarea {
 
 /*start of common rules*/
 
+body {
+    background-color: #E0EEFE;
+}
+
+header, .mainFooter {
+    background-color: white;
+    box-shadow: 0 0 15px black;
+    margin-top: 50px;
+}
+
 /*Enc of common rules*/
 
 /*START OF HEADER*/
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+}
+
+/*~~~~~~~~~~~~~~~ start of navbar ~~~~~~~~~~~~~~~*/
+
+.navbar-nav {
+    width: 98%;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar-nav .nav-item {
+    text-align: center;
+}
+
+.Active {
+    background-color: #E0EEFE !important;
+}
+
+/*menu hamburger*/
+.navbar-toggler-top-right {
+  position: absolute;
+  top: -140px;
+  right: .5rem;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*nav link*/
+
+.navbar .navbar-nav li {
+    transition: 1s;
+    margin: auto;
+    padding: 15px 0;
+    width: 120px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.navbar .navbar-nav li:hover {
+    /*border: 1px solid black;*/
+    box-shadow: 0 0 5px black;
+    background-color: #E0EEFE;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+header .navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+}
+
 
 /*END OF HEADER*/
 
