@@ -196,6 +196,29 @@ header .navbar-light .navbar-nav .nav-link:hover {
 
 /*START OF SECTION*/
 
+.mainSection article {
+    transition: .5s;
+    text-align: center;
+    background-color: white;
+}
+
+
+
+section article figure {
+    margin: 0;
+}
+
+section article img {
+    width: 100%;
+}
+
+section article footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgrey;
+}
+
 /*END OF SECTION*/
 
 /*START OF FOOTER*/
@@ -223,7 +246,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 }
 
 /*~~~~~ START OF DESK ~~~~~*/
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
     /*start of common rules*/
 
     /*Enc of common rules*/
@@ -233,6 +256,16 @@ header .navbar-light .navbar-nav .nav-link:hover {
     /*END OF HEADER*/
 
     /*START OF SECTION*/
+
+    .mainSection article {
+        transition: .5s;
+        background-color: unset;
+    }
+
+    .mainSection article:hover, header  {
+        background-color: white;
+        box-shadow: 0 0 15px black;
+    }
 
     /*END OF SECTION*/
 
