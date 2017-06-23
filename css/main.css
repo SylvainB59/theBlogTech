@@ -223,6 +223,51 @@ section article footer {
 
 /*START OF FOOTER*/
 
+.mainFooter {
+    margin-bottom: 30px;
+}
+
+.mainFooter ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.archive {
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social i {
+    font-size: 3em;
+}
+
+/*compteur en seconde*/
+
+.chronoBox {
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    border: 5px solid green;
+    border-radius: 10px 10px 0 10px;
+    color: green;
+    background-color: black;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+    animation: rebond 1s infinite;
+}
+
+@keyframes rebond {
+    from, to {bottom: 0px;}
+    55% {bottom: 15px}
+}
+
 /*END OF FOOTER*/
 
 
@@ -241,6 +286,10 @@ section article footer {
     /*END OF SECTION*/
 
     /*START OF FOOTER*/
+
+    .social {
+        flex-direction: row;
+    }
 
     /*END OF FOOTER*/
 }
@@ -270,6 +319,16 @@ section article footer {
     /*END OF SECTION*/
 
     /*START OF FOOTER*/
+
+    .mainSection article {
+        transition: .5s;
+        background-color: unset;
+    }
+
+    .mainSection article:hover, header  {
+        background-color: white;
+        box-shadow: 0 0 15px black;
+    }
 
     /*END OF FOOTER*/
 }
