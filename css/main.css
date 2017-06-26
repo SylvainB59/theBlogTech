@@ -205,6 +205,7 @@ header .navbar-light .navbar-nav .nav-link:hover {
 
 
 section article figure {
+    max-height: 200px;
     margin: 0;
 }
 
@@ -217,13 +218,15 @@ section article footer {
     display: flex;
     justify-content: space-around;
     background-color: lightgrey;
+
 }
 
 #show {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: grey;
+    font-size: 3em;
+    background-color: red;
 }
 
 /*page contact*/
@@ -355,6 +358,11 @@ section article footer {
         background-color: unset;
     }
 
+    .mainSection article footer {
+    position: absolute;
+    bottom: 0;
+    }
+
     .mainSection article:hover, header  {
         background-color: white;
         box-shadow: 0 0 15px black;
@@ -364,15 +372,7 @@ section article footer {
 
     /*START OF FOOTER*/
 
-    .mainSection article {
-        transition: .5s;
-        background-color: unset;
-    }
 
-    .mainSection article:hover, header  {
-        background-color: white;
-        box-shadow: 0 0 15px black;
-    }
 
     /*END OF FOOTER*/
 }

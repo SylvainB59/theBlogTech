@@ -38,3 +38,11 @@ function hide(){
   var vide = "";
   text.innerHTML = vide;
 }
+
+
+// confirmation bouton
+
+function confirmation(){
+  var myConfirm = "Are you sure??";
+  return confirm(myConfirm);
+}

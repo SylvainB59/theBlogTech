@@ -73,6 +73,7 @@
                 <form method="post" action="traitement.php">
                     <label for="email">Newsletter </label>
                     <input type="email" name="email" id="email" placeholder="Your e-mail">
+                    <input type="submit" name="" value="envoyer">
                 </form>
 
             </div>
@@ -81,8 +82,16 @@
 
             <div class="col-xs-12 col-md-6 connect">
 
+                <form method="post" action="traitement.php" onsubmit="return confirmation()">
+
+                <p><label for="pseudo">Pseudo : </label><input type="text" name="pseudo" id="pseudo"></p>
+                <p><label for="password">Password : </label><input type="text" name="password" id="password"></p>
+
                 <a href="#" class="btn">Sign in</a>
-                <a href="#" class="btn">Connect</a>
+                <input type="submit" name="connect" value="connect">
+                <!-- <a href="#" onclick="confirmation()" class="btn">Connect</a> -->
+
+                </form>
 
             </div>
 
@@ -105,7 +114,7 @@
 
                     <div class="articleContent row">
                         <figure class="col-12 col-md-4 col-lg-12">
-                            <img src="http://talks.chefduweb.nl/wccologne/img/img3.png" alt="Logo Wordpress Art 1">
+                            <img src="https://www.webpagefx.com/blog/images/assets/images.sixrevisions.com/2010/11/13-01_wordpress_common_functions_ld_img.png" alt="Logo Wordpress Art 1">
                         </figure>
 
                         <div class="col-12 col-md-8 col-lg-12">
